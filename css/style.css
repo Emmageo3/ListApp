@@ -17,10 +17,16 @@ section{
 
 ul{
     list-style: none;
+    display: flex;
 }
 
 .btn{
     background-color: #ce0033;
+    color: white;
+}
+
+.card{
+    margin: 1rem;
 }
 
 .card img{
@@ -32,4 +38,13 @@ ul{
 
 .card-body{
     text-align: center;
+}
+
+.row .btn{
+    background-color: white;
+}
+
+.card .col-4 img{
+    height: 40px;
+    width: 40px;
 }

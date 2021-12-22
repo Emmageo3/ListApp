@@ -2,89 +2,81 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
-
-fieldset{
-    width: 50%;
-    margin-top: 70px;
-    background-color: #ce0033;
-    box-shadow: 5px 5px 20px 1px 10px rgb(85, 85, 85);
-    border: 0px;
-    padding-left: 10px;
-    border-radius: 10px 10px 10px 10px;
-    color: white;
-    height: 700px;
-}
-
-table{
-    width: 80%;
-}
-
-td{
-    letter-spacing: 1px;
-    font-weight: bold;
-}
-
-h1{
     font-family: Arial, Helvetica, sans-serif;
-    letter-spacing: 3px;
-    text-align: center;
-    color: white;
-    margin-top: 1rem;
 }
 
-select{
-    padding: 10px;
-    border-radius: 10px;
-    border: none;
-    background-color: whitesmoke;
-}
-
-option{
-    background-color: white;
-}
-
-option:hover{
-    background-color: #ce0033;
-}
-
-hr{
-    border: 5px solid white;
-    border-radius: 10px;
-    width: 40%;
-    margin-top: 1rem;
-}
-
-ul li{
-    margin-left: 20px;
-    color: whitesmoke;
-}
-
-#submit{
-    margin-left: 13rem;
+.container{
+    margin-left: 30rem;
+    margin-right: 30rem;
     margin-top: 5rem;
-    padding: 10px;
-    color: #ce0033;
-    background-color: white;
-    width: 40%;
-    font-size: 17px;
-    border-radius: 20px;
-    border: 1px solid white;
-    text-align: center;
-    cursor: pointer;
 }
 
-#submit:hover{
+.titre{
+    background-color: #ce0033;
+    height: 5rem;
+    text-align: center;
     color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-form {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 1.2em 0;
+}
+
+input, label, button {
+    transition: .3s;
+}
+
+label {
+    transform: translate(10px, -15px);
+    cursor: text;
+    transform-origin: left top;
+    position: absolute;
+}
+
+input {
+    padding: 10px;
+    border: none; outline: none;
+    border-bottom: 2px solid grey;
+}
+
+button {
+    border: 0; padding: 10px 15px;
+    cursor: pointer; color: white;
     background-color: #ce0033;
 }
 
-input{
-    font-size: 16px;
-    border: none;
-    outline: none;
-    background: none;
-    border-bottom: 1px solid white;
-    color: white;
-    width: 100%;
+button:focus, button:hover {
+    background-color: #d92027;
+}
+
+.submit-form {
+    text-align: right;
+}
+
+input::placeholder {
+    opacity: 0;
+}
+
+input:focus,
+input:not(:placeholder-shown) {
+    border-bottom: 2px solid #ce0033;
+}
+
+input:not(:placeholder-shown) ~ label,
+input:focus ~ label {
+    transform: translate(10px, -30px) scale(.8);
+    padding-left: 0;
+    color: black;
+}
+
+textarea{
+    height: 5rem;
+}
+
+#photo, #date{
+    border-bottom: 2px solid grey;
 }

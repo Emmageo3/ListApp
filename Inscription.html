@@ -8,57 +8,69 @@
     <title>Liste des apprenants</title>
 </head>
 <body>
-    <center>
 
-        <fieldset>
-            <form>
-                <h1>Entrez les informations de l'apprenant</h1>
-                <hr>
-                <table>
-                    <tr>
-                        <td>Prénom:</td><td><input id="prenom" type="text" name="prenom" value=""><br><br></td>
-                    </tr>
-                    <tr>
-                        <td>Nom:</td><td><input id="nom" type="text" name="nom" value=""><br><br></td>
-                    </tr>
-                    <tr>
-                        <td>Adresse email:</td><td><input id="email" type="email" name="adresse" value=""><br><br></td>
-                    </tr>
-                    <tr>
-                        <td>Date de naissance:</td><td><input id="date" type="date" name="date" value=""><br><br></td>
-                    </tr>
-                    <tr>
-                        <td>Lieu de naissance:</td><td><input id="lieu" type="text" name="lieu" value=""><br><br></td>
-                    </tr>
-                    <tr>
-                        <td>Adresse:</td><td><input id="adresse" type="text" name="adresse" value=""><br><br></td>
-                    </tr>
-                    <tr>
-                        <td>Numéro de téléphone:</td><td><input id="tel" type="tel" name="nom" value=""><br><br></td>
-                    </tr><br><br>
-                    <tr>
-                        <td>Niveau:</td>
-                        <td>
-                            <select name="niveau" id="niveau">
-                                <option value="">Débutant</option>
-                                <option value="">Intermédiare</option>
-                                <option value="">Avancé</option>
-                            </select><br><br>
-                        </td>
-                    </tr><br><br>
-                    <tr>
-                        <td>Photo:</td><td><input id="photo" type="file" name="photo" value=""><br><br></td>
-                    </tr>
-                    <tr>
-                        <td colspan="2"><input type="submit" id="submit" value="Ajouter"></td>
-                    </tr>
-                </table>
-            </form>
-        </fieldset>
+    <div class="titre">
+        <h1>Entrer les informations de l'apprenant</h1>
+    </div>
 
-    </center>
     
-    <script src="js/app.js"></script>
 
+    <div class="container">
+        <div class="input-form">
+            <input type="prenom" name="prenom" id="prenom"
+                placeholder=" " />
+            <label for="prenom">Prénom</label>
+        </div>
+
+        <div class="input-form">
+            <input type="nom" name="nom" id="nom"
+                placeholder=" " />
+            <label for="nom">Nom</label>
+        </div>
+
+        <div class="input-form">
+            <input type="date" name="date" id="date"
+                placeholder=" " />
+            <label for="date">Date de naissance</label>
+        </div>
+
+        <div class="input-form">
+            <input type="lieu" name="lieu" id="lieu"
+                placeholder=" " />
+            <label for="lieu">Lieu de naissance</label>
+        </div>
+
+        <div class="input-form">
+            <input type="email" name="email" id="email"
+                placeholder=" " />
+            <label for="email">Adresse email</label>
+        </div>
+
+        <div class="input-form">
+            <input type="tel" name="tel" id="tel"
+                placeholder=" " />
+            <label for="tel">Numéro de téléphone</label>
+        </div>
+
+        <div class="input-form">
+            <input type="file" name="photo" id="photo"
+                placeholder=" "/>
+            <label for="photo">photo</label>
+        </div>
+
+
+        <label for="nom">Bio</label>
+        <div class="input-form">
+            <textarea  name="bio" id="bio" placeholder=" " cols="10" cols="10"></textarea>
+        </div>
+
+        
+        
+        <div class="submit-form">
+            <button type="submit">Ajouter</button>
+        </div>
+    </div>
+    
+    
 </body>
 </html>
