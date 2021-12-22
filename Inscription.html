@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/inscription.css">
+    <title>Liste des apprenants</title>
+</head>
+<body>
+    <center>
+
+        <fieldset>
+            <form>
+                <h1>Entrez les informations de l'apprenant</h1>
+                <hr>
+                <table>
+                    <tr>
+                        <td>Prénom:</td><td><input id="prenom" type="text" name="prenom" value=""><br><br></td>
+                    </tr>
+                    <tr>
+                        <td>Nom:</td><td><input id="nom" type="text" name="nom" value=""><br><br></td>
+                    </tr>
+                    <tr>
+                        <td>Adresse email:</td><td><input id="email" type="email" name="adresse" value=""><br><br></td>
+                    </tr>
+                    <tr>
+                        <td>Date de naissance:</td><td><input id="date" type="date" name="date" value=""><br><br></td>
+                    </tr>
+                    <tr>
+                        <td>Lieu de naissance:</td><td><input id="lieu" type="text" name="lieu" value=""><br><br></td>
+                    </tr>
+                    <tr>
+                        <td>Adresse:</td><td><input id="adresse" type="text" name="adresse" value=""><br><br></td>
+                    </tr>
+                    <tr>
+                        <td>Numéro de téléphone:</td><td><input id="tel" type="tel" name="nom" value=""><br><br></td>
+                    </tr><br><br>
+                    <tr>
+                        <td>Niveau:</td>
+                        <td>
+                            <select name="niveau" id="niveau">
+                                <option value="">Débutant</option>
+                                <option value="">Intermédiare</option>
+                                <option value="">Avancé</option>
+                            </select><br><br>
+                        </td>
+                    </tr><br><br>
+                    <tr>
+                        <td>Photo:</td><td><input id="photo" type="file" name="photo" value=""><br><br></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="submit" id="submit" value="Ajouter"></td>
+                    </tr>
+                </table>
+            </form>
+        </fieldset>
+
+    </center>
+    
+    <script src="js/app.js"></script>
+
+</body>
+</html>

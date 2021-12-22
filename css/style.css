@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #ce0033;
+    text-align: center;
+    color: white;
+    height: 7rem;
+}
+
+section{
+    margin-top: 5rem;
+}
+
+ul{
+    list-style: none;
+}
+
+.btn{
+    background-color: #ce0033;
+}
+
+.card img{
+    height: 10rem;
+    width: 50%;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.card-body{
+    text-align: center;
+}
